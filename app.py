@@ -21,7 +21,6 @@ subscriber_growth_data = pd.read_sql_query(query_subscriber_growth, conn)
 query_genre_preferences = """
     SELECT Genre, Language, Views
     FROM Content
-    WHERE Language = 'Mandarin'
 """
 genre_preferences_data = pd.read_sql_query(query_genre_preferences, conn)
 
