@@ -145,7 +145,7 @@ app.layout = html.Div(
 
                 html.Div(
                     children=[
-                        html.H3("User Complaints Heatmap", style={'textAlign': 'center'}),
+                        html.H3("User Complaints Gauge Chart", style={'textAlign': 'center'}),
                         dcc.Dropdown(
                             id='date-dropdown',
                             options=[{'label': str(date), 'value': str(date)} for date in user_complaints_data['Date'].unique()],
